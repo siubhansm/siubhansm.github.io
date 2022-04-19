@@ -14,11 +14,6 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="container2">
-        <div class="truckCont">
-          <img id="theTruck" src="images/truck.png" alt="truck" height="80px" />
-        </div>
-      </div>
       <div class="container">
         <a id="heading" href="#">
           <img
@@ -31,17 +26,16 @@
         >
         <ul class="navBarList">
           <li>
-            <a href="#">Menu</a>
+            <a href="#menuRef">Menu</a>
           </li>
           <li>
-            <a href="#">Gallery</a>
+            <a href="#galleryRef">Gallery</a>
           </li>
           <li>
-            <a href="#">Contact</a>
+            <a href="#findRef">Find Us</a>
           </li>
-
           <li>
-            <a href="#">Find Us</a>
+            <a href="#contactRef">Contact</a>
           </li>
         </ul>
       </div>
@@ -49,53 +43,136 @@
 
     <header class="mainHeader">
       <div class="container">
-        <div class="imageToastieCont">
+        <div class="truckCont">
+          <img id="theTruck" src="images/truck.png" alt="truck" height="80px" />
+        </div>
+        <div class="intro">
           <img
-            id="homePageToastie"
-            src="images/homePageToastie1.jpg"
-            alt="cheese toastie"
+            id="headerTruck"
+            class="landingImg"
+            src="images/foodTruck.jpeg"
+            alt="food truck"
           />
         </div>
         <div class="intro">
           <h1 class="heading">Our Story</h1>
+          <br />
           <p>
-            We have been melting cheese and frying bread since 2003. We are
-            <span class="boldText">The Melt Shack</span>. Find out where we are
-            next and use our sandwich builder to build a Grilled Cheese.
+            We opened our first Gilled Cheese Foodtruck in 2003. We are
+            passionate about melted cheese. We are
+            <span class="boldText">The Melt Shack</span>. We travel around
+            Ireland sharing that passion for cheese with our customers.
+            <br />
             <br />Love, <br />
-            The <span class="boldText">The Melt Shack</span> Team
+
+            The <span class="boldText">The Melt Shack </span> Team ❤️
           </p>
+          <br />
+          <br />
+          <div>
+            <img
+              id="headerToastie"
+              class="landingImg"
+              src="images/homePageToastie1.jpeg"
+              alt="cheese toastie"
+            />
+          </div>
         </div>
       </div>
     </header>
     <div class="container">
       <div class="menuButtonContainer">
-        <a href="#">menu</a>
-        <a href="#"><img src="images/arrowFinal2.png" alt="arrow" /></a>
+        <a href="#menuRef">view the menu</a>
+        <a href="#menuRef"><img src="images/arrowFinal2.png" alt="arrow" /></a>
       </div>
     </div>
-    <section class="menu">
+    <section class="menu" id="menuRef">
+      <div class="container">
+        <div class="genHeading">MENU</div>
+      </div>
       <div class="container">
         <div class="card">
           <h3 class="cardHeading">Grilled Cheese</h3>
-          <p>
-            We are a food truck, so we move around lot. Here's where to find us
-            now.
-          </p>
+          <table>
+            <tr>
+              <td>The Classic</td>
+              <td>8.50</td>
+            </tr>
+            <tr>
+              <td>The Tuna Melt</td>
+              <td>10.50</td>
+            </tr>
+            <tr>
+              <td>Mac N Cheese Melt</td>
+              <td>10.50</td>
+            </tr>
+            <tr>
+              <td>The Mozz' Melt</td>
+              <td>11.50</td>
+            </tr>
+            <tr>
+              <td>Ultimate Melt</td>
+              <td>12.50</td>
+            </tr>
+          </table>
         </div>
         <div class="card">
-          <h3 class="cardHeading">Sides and Drinks</h3>
-          <p>Link to a map of the where they are now</p>
+          <h3 class="cardHeading">Sides</h3>
+          <table>
+            <tr>
+              <td>Fries</td>
+              <td>3.50</td>
+            </tr>
+            <tr>
+              <td>Garlic and Cheese Fries</td>
+              <td>4.50</td>
+            </tr>
+            <tr>
+              <td>Taco Fries</td>
+              <td>5.50</td>
+            </tr>
+          </table>
+          <h3 class="cardHeading">Drinks</h3>
+          <table>
+            <tr>
+              <td>Coke</td>
+              <td>2.00</td>
+            </tr>
+            <tr>
+              <td>7up</td>
+              <td>2.00</td>
+            </tr>
+            <tr>
+              <td>Beer</td>
+              <td>7.50</td>
+            </tr>
+          </table>
         </div>
       </div>
     </section>
-    <section class="gallery">
+    <section class="gallery" id="galleryRef">
       <div class="container">
-        <img src="images/toastie1.png" alt="truck" />
-        <img src="images/toastie2.jpeg" alt="truck" />
+        <div class="genHeading">GALLERY</div>
+      </div>
+      <div class="container">
+        <div class="galleryRow">
+          <div class="galleryColumn">
+            <img src="images/toastie1.png" />
+            <img src="images/toastie2.jpeg" />
+            <img src="images/toastie3.jpeg" />
+          </div>
+          <div class="galleryColumn">
+            <img src="images/toastie3.jpeg" />
+            <img src="images/toastie4.jpeg" />
+            <img src="images/toastie6.jpeg" />
+          </div>
+        </div>
       </div>
     </section>
-    <section class="findUs">
+    <section class="findUs" id="findRef">
+      <div class="container">
+        <div class="genHeading">FIND US</div>
+      </div>
       <div class="container">
         <div class="card">
           <h3 class="cardHeading">Card Heading 1</h3>
@@ -124,12 +201,65 @@
       ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️
       cheese! We ❤️ cheese! We ❤️ cheese!</marquee
     >
-    <section class="contact">
-      <div class="container">
-        <h3>Fancy a chat?</h3>
-        <form action="">I'M A CONTACT FORM</form>
+    <!--form start-->
+    <section class="contact" id="contactRef">
+      <div id="formFilled" class="container">
+        <h2>Fancy a chat?</h2>
+        <form id="contactForm">
+          <div class="line">
+            <input
+              type="text"
+              id="fName"
+              name="fName"
+              placeholder="First Name"
+              required
+              maxlength="15"
+            />
+            <input
+              type="text"
+              id="lName"
+              name="lName"
+              placeholder="Last Name"
+              required
+              maxlength="15"
+            />
+          </div>
+          <div class="line">
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              placeholder="Phone No."
+              required
+              maxlength="18"
+            />
+
+            <input
+              type="text"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              maxlength="60"
+            />
+          </div>
+          <div class="line">
+            <textarea
+              type="text"
+              id="message"
+              name="message"
+              placeholder="Send us a messsage..."
+              required
+              maxlength="300"
+            ></textarea>
+          </div>
+          <div class="line">
+            <button type="button" onclick="submitButton()">Submit</button>
+          </div>
+        </form>
       </div>
     </section>
+    <!--form end-->
     <!--footer start-->
     <div class="footerContainer">
       <footer>
@@ -140,5 +270,6 @@
       </footer>
     </div>
     <!--footer end-->
+    <script src="script.js"></script>
   </body>
 </html>
