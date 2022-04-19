@@ -4,57 +4,98 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grilled Cheese Foodtruck</title>
+    <title>Grilled Cheese Food Truck</title>
     <link rel="shortcut icon" type="image/png" href="images/cheese.png" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Schoolbell&v1"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav class="navbar">
+      <div class="container2">
+        <div class="truckCont">
+          <img id="theTruck" src="images/truck.png" alt="truck" height="80px" />
+        </div>
+      </div>
       <div class="container">
         <a id="heading" href="#">
-          <img src="images/cheese.png" alt="" width="37" height="31" />
-          GRILL'D CHEEZ PLEEZ</a
+          <img
+            src="images/cheese.png"
+            alt="cheese logo"
+            width="48"
+            height="40"
+          />
+          THE MELT SHACK</a
         >
         <ul class="navBarList">
           <li>
-            <a href="#">Home</a>
+            <a href="#">Menu</a>
+          </li>
+          <li>
+            <a href="#">Gallery</a>
           </li>
           <li>
             <a href="#">Contact</a>
           </li>
-          <li>
-            <a href="#">Menu</a>
-          </li>
+
           <li>
             <a href="#">Find Us</a>
           </li>
         </ul>
       </div>
     </nav>
+
     <header class="mainHeader">
-      <div class="truckCont">
-        <img id="theTruck" src="images/truck.png" alt="truck" height="100px" />
-      </div>
       <div class="container">
+        <div class="imageToastieCont">
+          <img
+            id="homePageToastie"
+            src="images/homePageToastie1.jpg"
+            alt="cheese toastie"
+          />
+        </div>
         <div class="intro">
-          <h1 class="heading">I'm a heading</h1>
+          <h1 class="heading">Our Story</h1>
           <p>
-            I'm a paragraph about grilled cheese food truck. I'm a paragraph
-            about grilled cheese food truck. I'm a paragraph about grilled
-            cheese food truck. I'm a paragraph about grilled cheese food truck.
-            I'm a paragraph about grilled cheese food truck. I'm a paragraph
-            about grilled cheese food truck.
+            We have been melting cheese and frying bread since 2003. We are
+            <span class="boldText">The Melt Shack</span>. Find out where we are
+            next and use our sandwich builder to build a Grilled Cheese.
+            <br />Love, <br />
+            The <span class="boldText">The Melt Shack</span> Team
           </p>
         </div>
-        <img
-          id="homePageToastie"
-          src="images/toastie3.jpeg"
-          alt="cheese toastie"
-          height="100px"
-        />
       </div>
     </header>
-    <section class="where">
+    <div class="container">
+      <div class="menuButtonContainer">
+        <a href="#">menu</a>
+        <a href="#"><img src="images/arrowFinal2.png" alt="arrow" /></a>
+      </div>
+    </div>
+    <section class="menu">
+      <div class="container">
+        <div class="card">
+          <h3 class="cardHeading">Grilled Cheese</h3>
+          <p>
+            We are a food truck, so we move around lot. Here's where to find us
+            now.
+          </p>
+        </div>
+        <div class="card">
+          <h3 class="cardHeading">Sides and Drinks</h3>
+          <p>Link to a map of the where they are now</p>
+        </div>
+      </div>
+    </section>
+    <section class="gallery">
+      <div class="container">
+        <img src="images/toastie1.png" alt="truck" />
+        <img src="images/toastie2.jpeg" alt="truck" />
+      </div>
+    </section>
+    <section class="findUs">
       <div class="container">
         <div class="card">
           <h3 class="cardHeading">Card Heading 1</h3>
@@ -67,6 +108,26 @@
           <h3 class="cardHeading">Card Heading 2</h3>
           <p>Link to a map of the where they are now</p>
         </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9562.184066077067!2d-7.994881117475844!3d53.190123184225946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485c59983e834c55%3A0xa00c7a997318e00!2sCurraghavarna%2C%20Banagher%2C%20Co.%20Offaly!5e0!3m2!1sen!2sie!4v1650043022330!5m2!1sen!2sie"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section>
+    <marquee scrollamount="7"
+      >We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We
+      ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️
+      cheese! We ❤️ cheese! We ❤️ cheese!</marquee
+    >
+    <section class="contact">
+      <div class="container">
+        <h3>Fancy a chat?</h3>
+        <form action="">I'M A CONTACT FORM</form>
       </div>
     </section>
     <!--footer start-->
