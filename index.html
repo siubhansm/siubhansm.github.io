@@ -97,7 +97,7 @@
       </div>
     </div>
     <section class="menu" id="menuRef">
-      <div class="container">
+      <div id="menuHead" class="container">
         <div class="genHeading">MENU</div>
       </div>
       <div class="container">
@@ -162,8 +162,8 @@
 
       <div class="container">
         <div class="buildSandwich">
-          <h2>Want to build your own?</h2>
-          <div class="sandwichRow">
+          <h2>Want to build your own sandwich?</h2>
+          <div class="sandwichButtonRow">
             <input
               type="button"
               value="Pulled Pork"
@@ -185,9 +185,22 @@
               onclick="addItem(1,value)"
             />
             <input type="button" value="Tuna" onclick="addItem(3,value)" />
+            <input type="button" value="Bacon" onclick="addItem(2.50,value)" />
+            <input type="button" value="Cheddar" onclick="addItem(2,value)" />
             <input type="button" value="Provolone" onclick="addItem(3,value)" />
             <input type="button" value="Gouda" onclick="addItem(3,value)" />
             <input type="button" value="Tomatoes" onclick="addItem(1,value)" />
+            <input
+              type="button"
+              value="Mushrooms"
+              onclick="addItem(1.50,value)"
+            />
+
+            <input
+              type="button"
+              value="Fried Egg"
+              onclick="addItem(.50,value)"
+            />
           </div>
           <div class="sandwichRow">
             <div id="itemsAdded">You have added...</div>
@@ -195,7 +208,7 @@
           </div>
           <div class="buttonRow">
             <button onclick="calculatePrice();">Calculate Price</button>
-            <button onclick="clearSandwich();">Start Again!</button>
+            <button onclick="clearSandwich();">Start Again</button>
           </div>
 
           <div id="priceDisplay"></div>
@@ -288,34 +301,35 @@
       cheese! We ❤️ cheese! We ❤️ cheese!</marquee
     >
     <!--marquee end-->
+    <!--find us start-->
     <section class="findUs" id="findRef">
       <div class="container">
         <div class="genHeading">FIND US</div>
       </div>
       <div class="container">
         <div class="card">
-          <h3 class="cardHeading">
-            Check out the map to find out where we are now....
-          </h3>
-          <p>
-            We are a food truck, so we move around lot. Can't wait to see you!
-          </p>
-          </table>
-          <h3 class="cardHeading">Opening Hours</h3>
-          <table>
-            <tr>
-              <td>Monday, Tuesday and Wednesday</td>
-              <td>11-4</td>
-            </tr>
-             <tr>
-              <td>Thursday and Friday</td>
-              <td>10-5</td>
-            </tr>
-            <tr>
-              <td>Weekends</td>
-              <td>9-9</td>
-            </tr>
-          </table>
+          <div>
+            <h2 class="cardHeading">
+              Check out the map to find out where we are now....
+            </h2>
+          </div>
+          <div>
+            <h3 class="cardHeading">Opening Hours</h3>
+            <table>
+              <tr>
+                <td>Monday, Tuesday and Wednesday</td>
+                <td>11-4</td>
+              </tr>
+              <tr>
+                <td>Thursday and Friday</td>
+                <td>10-5</td>
+              </tr>
+              <tr>
+                <td>Weekends</td>
+                <td>9-9</td>
+              </tr>
+            </table>
+          </div>
         </div>
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1V648_YpSjQVmNjP8FIoeVqMFh5iLVBi6&ehbc=2E312F"
@@ -325,7 +339,7 @@
         ></iframe>
       </div>
     </section>
-
+    <!--find us end-->
     <!--form start-->
     <section class="contact" id="contactRef">
       <div id="formFilled" class="container">

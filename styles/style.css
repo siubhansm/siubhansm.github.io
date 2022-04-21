@@ -47,6 +47,10 @@ marquee {
   background-color: #ffc93c;
   padding: 5px;
 }
+a {
+  text-decoration: none;
+  color: black;
+}
 /*global style ends*/
 /*navbar style start*/
 .navbar {
@@ -83,6 +87,11 @@ marquee {
   margin-bottom: 25px;
   text-decoration: none;
   width: 45%;
+}
+@media (max-width: 600px) {
+  #heading {
+    width: 80%;
+  }
 }
 .navBarList {
   display: flex;
@@ -247,6 +256,11 @@ header .container {
 #headerToastie {
   transform: rotate(7deg);
 }
+@media (max-width: 600px) {
+  .intro {
+    width: 80%;
+  }
+}
 /*header style ends*/
 /*menu arrow link style starts*/
 .menuButtonContainer {
@@ -277,18 +291,37 @@ header .container {
 }
 .menu .container {
   display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 750px) {
+  .menu .container {
+    justify-content: column;
+    align-items: center;
+  }
+}
+/*overriding the .menu .container so that the heading is center*/
+#menuHead {
   justify-content: space-around;
 }
-
-.menu .card {
+.menu .card,
+.buildSandwich {
   border: 3px solid #155263;
-  width: 40%;
-  margin: 30px;
+  margin: 20px;
   padding: 20px;
   background-color: white;
   box-shadow: 5px 5px 5px rgba(21, 82, 99, 0.6);
   text-align: center;
   font-size: 20px;
+}
+
+.menu .card {
+  width: 40%;
+}
+@media (max-width: 750px) {
+  .menu .card,
+  .buildSandwich {
+    width: 80%;
+  }
 }
 .cardHeading {
   padding: 10px;
@@ -301,38 +334,46 @@ td {
   text-align: left;
 }
 
+.sandwichButtonRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin-top: 10px;
+}
 .sandwichRow {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .buttonRow {
   display: flex;
-  margin-top: 20px;
+  margin-top: 10px;
   justify-content: center;
 }
+
 .buildSandwich input {
-  background-color: #155263;
-  border: 1px solid #ff6f3c;
-  margin: 3px;
-  padding: 6px;
-  color: aliceblue;
-  border-radius: 10px;
-  font-size: 20px;
-}
-.buildSandwich input:hover {
-  background-color: #ff6f3c;
-}
-.buildSandwich button {
   background-color: white;
   border: 1px solid #155263;
   margin: 3px;
   padding: 6px;
   border-radius: 10px;
+  font-size: 20px;
+}
+.buildSandwich input:hover {
+  box-shadow: 5px 5px 5px rgba(21, 82, 99, 0.6);
+}
+.buildSandwich button {
+  background-color: #155263;
+  border: 1px solid #ff6f3c;
+  margin: 3px;
+  padding: 10px;
+  color: aliceblue;
+  border-radius: 10px;
   font-size: 30px;
 }
 .buildSandwich button:hover {
-  box-shadow: 5px 5px 5px rgba(21, 82, 99, 0.6);
+  background-color: #ff6f3c;
 }
 #itemsAdded {
   height: 100px;
@@ -376,6 +417,17 @@ td {
   display: flex;
   justify-content: space-around;
 }
+.findUs .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.card h2 {
+  padding: 0;
+}
+.findUs iframe {
+  margin-bottom: 10px;
+}
 /*find us style ends*/
 /*contact style starts*/
 .contact h2 {
@@ -404,7 +456,7 @@ td {
   background-color: #ff6f3c;
   width: 100%;
   padding: 10px;
-  margin: 5px;
+  margin: 15px;
 }
 .line button {
   margin: 15px;
@@ -445,6 +497,25 @@ td {
   box-shadow: none;
   outline: none;
 }
+@media (max-width: 750px) {
+  .contact .container {
+    width: 100%;
+  }
+  .formCont {
+    width: 100%;
+  }
+  .contact .line {
+    flex-direction: column;
+    width: 100%;
+  }
+  #message {
+    margin: 20px;
+  }
+  .line button {
+    width: 100%;
+  }
+}
+
 /*contact  style ends*/
 /*footer style start*/
 .content {
