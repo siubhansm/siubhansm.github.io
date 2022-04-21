@@ -19,8 +19,8 @@
           <img
             src="images/cheese.png"
             alt="cheese logo"
-            width="48"
-            height="40"
+            width="37"
+            height="31"
           />
           THE MELT SHACK</a
         >
@@ -44,7 +44,13 @@
     <header class="mainHeader">
       <div class="container">
         <div class="truckCont">
-          <img id="theTruck" src="images/truck.png" alt="truck" height="80px" />
+          <a href="#"
+            ><img
+              id="theTruck"
+              src="images/truck.png"
+              alt="truck"
+              height="80px"
+          /></a>
         </div>
         <div class="intro">
           <img
@@ -149,22 +155,126 @@
           </table>
         </div>
       </div>
+
+      <div class="container">
+        <div class="buildSandwich">
+          <h2>Want to build your own?</h2>
+          <div class="sandwichRow">
+            <input
+              type="button"
+              value="Pulled Pork"
+              onclick="addItem(5, value)"
+            />
+            <input
+              type="button"
+              value="Brisket Beef"
+              onclick="addItem(5,value)"
+            />
+            <input
+              type="button"
+              value="Mac'N'Cheese"
+              onclick="addItem(4,value)"
+            />
+            <input
+              type="button"
+              value="Crispy Onions"
+              onclick="addItem(1,value)"
+            />
+            <input type="button" value="Tuna" onclick="addItem(3,value)" />
+            <input type="button" value="Provolone" onclick="addItem(3,value)" />
+            <input type="button" value="Gouda" onclick="addItem(3,value)" />
+            <input type="button" value="Tomatoes" onclick="addItem(1,value)" />
+          </div>
+          <div class="sandwichRow">
+            <div>You have added...</div>
+            <div id="itemDisplay"></div>
+          </div>
+          <div class="sandwichRow">
+            <button onclick="calculatePrice();">Calculate Price</button>
+            <button onclick="clearSandwich();">Start Again!</button>
+          </div>
+          <div class="sandwichRow">
+            <div>€</div>
+            <div id="priceDisplay"></div>
+          </div>
+        </div>
+      </div>
     </section>
     <section class="gallery" id="galleryRef">
       <div class="container">
         <div class="genHeading">GALLERY</div>
       </div>
       <div class="container">
-        <div class="galleryRow">
-          <div class="galleryColumn">
-            <img src="images/toastie1.png" />
-            <img src="images/toastie2.jpeg" />
-            <img src="images/toastie3.jpeg" />
+        <div class="flexGallery">
+          <div class="imageContainer">
+            <img
+              id="toastImage1"
+              onmouseenter="showImageOverlay1();"
+              onmouseout="hideImageOverlay1();"
+              src="images/toastie1.png"
+            />
+            <p id="toastP1" class="toastP" onmouseenter="showImageOverlay1();">
+              Texas toast, gouda cheese, havarti cheese, cheddar cheese.
+            </p>
           </div>
-          <div class="galleryColumn">
-            <img src="images/toastie3.jpeg" />
-            <img src="images/toastie4.jpeg" />
-            <img src="images/toastie6.jpeg" />
+          <div class="imageContainer">
+            <img
+              id="toastImage2"
+              onmouseenter="showImageOverlay2();"
+              onmouseout="hideImageOverlay2();"
+              src="images/toastie2.jpeg"
+            />
+            <p id="toastP2" class="toastP" onmouseenter="showImageOverlay2();">
+              Delicious layers of aged cheddar, crumbled smoked bacon & freshly
+              diced tomatoes.
+            </p>
+          </div>
+          <div class="imageContainer">
+            <img
+              id="toastImage3"
+              onmouseenter="showImageOverlay3();"
+              onmouseout="hideImageOverlay3();"
+              src="images/toastie3.jpeg"
+            />
+            <p id="toastP3" class="toastP" onmouseenter="showImageOverlay3();">
+              American cheese, white bread, mayonnaise.
+            </p>
+          </div>
+          <div class="imageContainer">
+            <img
+              id="toastImage4"
+              onmouseenter="showImageOverlay4();"
+              onmouseout="hideImageOverlay4();"
+              src="images/toastie4.jpeg"
+            />
+            <p id="toastP4" class="toastP" onmouseenter="showImageOverlay4();">
+              Pepper jack cheese, grilled chicken, diced red onions & finished
+              with sweet BBQ sauce.
+            </p>
+          </div>
+          <div class="imageContainer">
+            <img
+              id="toastImage5"
+              onmouseenter="showImageOverlay5();"
+              onmouseout="hideImageOverlay5();"
+              src="images/toastie5.jpg"
+            />
+            <p id="toastP5" class="toastP" onmouseenter="showImageOverlay5();">
+              Provolone cheese, all beef meatballs, marinara sauce & finished
+              with a touch of parmesan cheese.
+            </p>
+          </div>
+          <div class="imageContainer">
+            <img
+              id="toastImage6"
+              onmouseenter="showImageOverlay6();"
+              onmouseout="hideImageOverlay6();"
+              src="images/toastie6.jpeg"
+            />
+            <p id="toastP6" class="toastP" onmouseenter="showImageOverlay6();">
+              Swiss cheese, smoked ham & grilled chicken finished with dijon
+              mustard sauce.
+            </p>
           </div>
         </div>
       </div>
@@ -263,8 +373,8 @@
     <div class="footerContainer">
       <footer>
         <div class="content">
-          <p>I'm the footer</p>
-          <a><img alt="cheeseLogo" src="images/cheese.png" width="10%" /></a>
+          <a><img alt="cheeseLogo" src="images/cheese.png" width="5%" /></a>
+          <p>©2022 The Melt Shack.</p>
         </div>
       </footer>
     </div>
