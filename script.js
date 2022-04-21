@@ -104,7 +104,7 @@ function calculatePrice() {
   if (price == 0) {
     alert("Go on...add some items to your sandwich!");
   } else {
-    document.getElementById("priceDisplay").innerHTML = price;
+    document.getElementById("priceDisplay").innerHTML = "€" + price;
   }
 }
 function clearSandwich() {
