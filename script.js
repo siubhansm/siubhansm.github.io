@@ -1,3 +1,5 @@
+///FORM SCRIPT
+
 function submitButton() {
   let fNameInput = document.getElementById("fName").value;
   let lNameInput = document.getElementById("lName").value;
@@ -29,6 +31,7 @@ function submitButton() {
   document.getElementById("formFilled").innerHTML =
     "<h2>Thanks, we will be in touch soon...</h2><br><br><br><br><br><br><br><br><br><br>";
 }
+///image overlay SCRIPT
 
 const imageOverlay1 = document.getElementById("toastP1");
 const images1 = document.getElementById("toastImage1");
@@ -90,11 +93,13 @@ function hideImageOverlay6() {
   imageOverlay6.style.display = "none";
   images6.style.filter = "brightness(100%)";
 }
+///sandwich builder SCRIPT
 var newSandwich = [];
 function addItem(itemPrice, item) {
   newSandwich.push(itemPrice);
   document.getElementById("itemDisplay").innerHTML += item + ": ";
-  document.getElementById("itemDisplay").innerHTML += itemPrice + "<br>";
+  document.getElementById("itemDisplay").innerHTML +=
+    itemPrice.toFixed(2) + "<br>";
 }
 function calculatePrice() {
   var price = 0;
@@ -104,7 +109,7 @@ function calculatePrice() {
   if (price == 0) {
     alert("Go on...add some items to your sandwich!");
   } else {
-    document.getElementById("priceDisplay").innerHTML = "€" + price;
+    document.getElementById("priceDisplay").innerHTML = "€" + price.toFixed(2);
   }
 }
 function clearSandwich() {
