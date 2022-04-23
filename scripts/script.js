@@ -1,5 +1,4 @@
-///FORM SCRIPT
-
+///Script for form validation
 function emalValidate() {
   let emailInput = document.getElementById("email").value;
   if (!emailInput.includes("@") || !emailInput.includes(".")) {
@@ -39,7 +38,8 @@ function submitButton() {
     "<h2>Thanks, we will be in touch soon...</h2><br><br><br><br><br><br><br><br><br><br>";
 }
 
-///image overlay SCRIPT
+///Script for image overlay
+//1st image
 let imageOverlay1 = document.getElementById("toastP1");
 let images1 = document.getElementById("toastImage1");
 
@@ -53,7 +53,7 @@ function hideImageOverlay1() {
 }
 let imageOverlay2 = document.getElementById("toastP2");
 let images2 = document.getElementById("toastImage2");
-
+//2nd image
 function showImageOverlay2() {
   imageOverlay2.style.display = "block";
   images2.style.filter = "brightness(50%)";
@@ -62,6 +62,7 @@ function hideImageOverlay2() {
   imageOverlay2.style.display = "none";
   images2.style.filter = "brightness(100%)";
 }
+//3rd image
 let imageOverlay3 = document.getElementById("toastP3");
 let images3 = document.getElementById("toastImage3");
 function showImageOverlay3() {
@@ -72,6 +73,7 @@ function hideImageOverlay3() {
   imageOverlay3.style.display = "none";
   images3.style.filter = "brightness(100%)";
 }
+//4th image
 let imageOverlay4 = document.getElementById("toastP4");
 let images4 = document.getElementById("toastImage4");
 function showImageOverlay4() {
@@ -82,6 +84,7 @@ function hideImageOverlay4() {
   imageOverlay4.style.display = "none";
   images4.style.filter = "brightness(100%)";
 }
+//5th image
 let imageOverlay5 = document.getElementById("toastP5");
 let images5 = document.getElementById("toastImage5");
 function showImageOverlay5() {
@@ -92,6 +95,7 @@ function hideImageOverlay5() {
   imageOverlay5.style.display = "none";
   images5.style.filter = "brightness(100%)";
 }
+//6th image
 let imageOverlay6 = document.getElementById("toastP6");
 let images6 = document.getElementById("toastImage6");
 function showImageOverlay6() {
@@ -103,7 +107,7 @@ function hideImageOverlay6() {
   images6.style.filter = "brightness(100%)";
 }
 
-///sandwich builder SCRIPT
+///Script for sandwich builder
 var newSandwich = [];
 function addItem(itemPrice, item) {
   newSandwich.push(itemPrice);

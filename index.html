@@ -13,6 +13,7 @@
     />
   </head>
   <body>
+    <!--Navbar starts here-->
     <nav class="navbar">
       <div class="container">
         <a id="heading" href="#">
@@ -40,7 +41,8 @@
         </ul>
       </div>
     </nav>
-
+    <!--Navbar ends here-->
+    <!--Landing area starts here-->
     <header class="mainHeader">
       <div class="container">
         <div class="truckCont">
@@ -74,7 +76,6 @@
             >
             <br />
             <br />Love, <br />
-
             The <span class="boldText">The Melt Shack </span> Team ❤️
           </p>
           <br />
@@ -90,12 +91,16 @@
         </div>
       </div>
     </header>
+    <!--Landing area ends here-->
+    <!--landing area menu link starts here-->
     <div class="container">
       <div class="menuButtonContainer">
         <a href="#menuRef">view the menu</a>
         <a href="#menuRef"><img src="images/arrowFinal2.png" alt="arrow" /></a>
       </div>
     </div>
+    <!--landing area menu link ends here-->
+    <!--MENU CARDS start here-->
     <section class="menu" id="menuRef">
       <div id="menuHead" class="container">
         <div class="genHeading">MENU</div>
@@ -159,11 +164,13 @@
           </table>
         </div>
       </div>
-
+      <!--MENU CARDS end here-->
+      <!--MENU sandwich builder starts here-->
       <div class="container">
         <div class="buildSandwich">
           <h2>Want to build your own sandwich?</h2>
           <div class="sandwichButtonRow">
+            <!--All ingredients pass parameters to the function from here. They are the price, and the name of the item which is contained in the value-->
             <input
               type="button"
               value="Pulled Pork"
@@ -195,7 +202,6 @@
               value="Mushrooms"
               onclick="addItem(1.50,value)"
             />
-
             <input
               type="button"
               value="Fried Egg"
@@ -212,6 +218,8 @@
           </div>
         </div>
       </div>
+      <!--MENU sandwich builder ends here-->
+      <!--Gallery starts here-->
     </section>
     <section class="gallery" id="galleryRef">
       <div class="container">
@@ -292,6 +300,7 @@
         </div>
       </div>
     </section>
+    <!--Gallery ends here-->
     <!--marquee start-->
     <marquee scrollamount="7"
       >We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We ❤️ cheese! We
@@ -405,6 +414,6 @@
       </footer>
     </div>
     <!--footer end-->
-    <script src="script.js"></script>
+    <script src="scripts/script.js"></script>
   </body>
 </html>
