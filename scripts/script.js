@@ -6,14 +6,13 @@ function emalValidate() {
     return true;
   }
 }
-
 function submitButton() {
   let fNameInput = document.getElementById("fName").value;
   let lNameInput = document.getElementById("lName").value;
   let emailInput = document.getElementById("email").value;
   let phoneInput = document.getElementById("phone").value;
   let messageInput = document.getElementById("message").value;
-
+  //if any of the inputs are empty the function returns false and an alert is shown
   if (
     fNameInput == "" ||
     lNameInput == "" ||
@@ -24,16 +23,21 @@ function submitButton() {
     alert("Please fill out all the fields in the contact form to proceed!");
     return false;
   }
+  //if the phone number contains anything BUT numbers, it will then run the email validation too to check if that's ok
   if (isNaN(phoneInput)) {
     alert("Phone No. can contain only numbers");
+    //if the email AND the phone inputs are not valid then return false and show both messages
     if (emalValidate() === true) {
       return false;
     }
+    //if just the phone is not valid, still return false with only a notification for the phone
     return false;
   }
+  //if just the email is invalid then return false with a message
   if (emalValidate() === true) {
     return false;
   }
+  //if all is good then replace the form with a notice to say it's been submittes
   document.getElementById("formFilled").innerHTML =
     "<h2>Thanks, we will be in touch soon...</h2><br><br><br><br><br><br><br><br><br><br>";
 }
@@ -42,11 +46,12 @@ function submitButton() {
 //1st image
 let imageOverlay1 = document.getElementById("toastP1");
 let images1 = document.getElementById("toastImage1");
-
+//when the mouse enters the object then the paragraph is visible and the image brightness is rduced
 function showImageOverlay1() {
   imageOverlay1.style.display = "block";
   images1.style.filter = "brightness(50%)";
 }
+//when the mouse exits the object then the paragraph is no longer visible and brightness returns to normal
 function hideImageOverlay1() {
   imageOverlay1.style.display = "none";
   images1.style.filter = "brightness(100%)";
@@ -108,18 +113,26 @@ function hideImageOverlay6() {
 }
 
 ///Script for sandwich builder
+//create a new array to store the sandwich prices
 var newSandwich = [];
+//when the user clicks an item two parameters are sent to the function
+//1 parameter is for the price and on is for the item name
 function addItem(itemPrice, item) {
+  //the item price is added to the array
   newSandwich.push(itemPrice);
+  //the sandwich can't have more than 10 items so this if statement checks that
   if (newSandwich.length > 10) {
     alert("you can't add more than 10 items to a sandwich");
   } else {
+    //if the sandwich does not contain more than 10 items, it will display the item name and price
     document.getElementById("itemDisplay").innerHTML += item + ": ";
     document.getElementById("itemDisplay").innerHTML +=
       itemPrice.toFixed(2) + "<br>";
+    //the calculate price function will also be run
     calculatePrice();
   }
 }
+//this function is used to add the array together and update the price display
 function calculatePrice() {
   var price = 0;
   for (i = 0; i < newSandwich.length; i++) {
@@ -127,8 +140,11 @@ function calculatePrice() {
   }
   document.getElementById("priceDisplay").innerHTML = "€" + price.toFixed(2);
 }
+//the user can clear their sandwich by clicking a button to run this function
 function clearSandwich() {
+  //this function clears out all the DOM item and price displays
   document.getElementById("itemDisplay").innerHTML = "";
   document.getElementById("priceDisplay").innerHTML = "";
+  //it also empties the array
   newSandwich = [];
 }

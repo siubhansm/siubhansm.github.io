@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grilled Cheese Food Truck</title>
-    <link rel="shortcut icon" type="image/png" href="images/cheese.png" />
+    <link rel="shortcut icon" type="image/png" href="images/cheese.webp" />
     <link rel="stylesheet" href="styles/style.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Schoolbell&v1"
@@ -18,7 +18,7 @@
       <div class="container">
         <a id="heading" href="#">
           <img
-            src="images/cheese.png"
+            src="images/cheese.webp"
             alt="cheese logo"
             width="37"
             height="31"
@@ -44,12 +44,13 @@
     <!--Navbar ends here-->
     <!--Landing area starts here-->
     <header class="mainHeader">
+      <!--The animated truck is contained in the header-->
       <div class="container">
         <div class="truckCont">
           <a href="#"
             ><img
               id="theTruck"
-              src="images/truck.png"
+              src="images/truck.webp"
               alt="truck"
               height="80px"
           /></a>
@@ -58,10 +59,11 @@
           <img
             id="headerTruck"
             class="landingImg"
-            src="images/foodTruck.jpeg"
+            src="images/foodTruck.webp"
             alt="food truck"
           />
         </div>
+        <!--There's a link to the find us section in the intro paragraph-->
         <div class="intro">
           <h1 class="heading">Our Story</h1>
           <br />
@@ -84,7 +86,7 @@
             <img
               id="headerToastie"
               class="landingImg"
-              src="images/homePageToastie1.jpeg"
+              src="images/homePageToastie1.webp"
               alt="cheese toastie"
             />
           </div>
@@ -95,8 +97,9 @@
     <!--landing area menu link starts here-->
     <div class="container">
       <div class="menuButtonContainer">
+        <!--This is an additional stylized link to the menu in the landing section-->
         <a href="#menuRef">view the menu</a>
-        <a href="#menuRef"><img src="images/arrowFinal2.png" alt="arrow" /></a>
+        <a href="#menuRef"><img src="images/arrowFinal2.webp" alt="arrow" /></a>
       </div>
     </div>
     <!--landing area menu link ends here-->
@@ -106,7 +109,9 @@
         <div class="genHeading">MENU</div>
       </div>
       <div class="container">
+        <!--The menu has 3 cards that contain a table each: sandwiches, sides and drinks-->
         <div class="card">
+          <!--Card 1: sandwiches-->
           <h3 class="cardHeading">Grilled Cheese</h3>
           <table>
             <tr>
@@ -132,6 +137,7 @@
           </table>
         </div>
         <div class="card">
+          <!--Card 2: sides-->
           <h3 class="cardHeading">Sides</h3>
           <table>
             <tr>
@@ -148,6 +154,7 @@
             </tr>
           </table>
           <h3 class="cardHeading">Drinks</h3>
+          <!--Card 3: drinks-->
           <table>
             <tr>
               <td class="food">Coke</td>
@@ -214,6 +221,7 @@
           </div>
           <div id="priceDisplay"></div>
           <div class="buttonRow">
+            <!--This button runs the clear function so that the user can build a new sandwich-->
             <button onclick="clearSandwich();">Start Again</button>
           </div>
         </div>
@@ -228,9 +236,10 @@
       <div class="container">
         <div class="flexGallery">
           <div class="imageContainer">
+            <!--Each image has individual functions in the JS so that the paragraph overlay shows-->
             <img
               id="toastImage1"
-              src="images/toastie1.png"
+              src="images/toastie1.webp"
               onmouseenter="showImageOverlay1();"
               onmouseout="hideImageOverlay1();"
             />
@@ -243,7 +252,7 @@
               id="toastImage2"
               onmouseenter="showImageOverlay2();"
               onmouseout="hideImageOverlay2();"
-              src="images/toastie2.jpeg"
+              src="images/toastie2.webp"
             />
             <p id="toastP2" class="toastP" onmouseenter="showImageOverlay2();">
               Delicious layers of aged cheddar, crumbled smoked bacon & freshly
@@ -255,7 +264,7 @@
               id="toastImage3"
               onmouseenter="showImageOverlay3();"
               onmouseout="hideImageOverlay3();"
-              src="images/toastie3.jpeg"
+              src="images/toastie3.webp"
             />
             <p id="toastP3" class="toastP" onmouseenter="showImageOverlay3();">
               American cheese, white bread, mayonnaise.
@@ -266,7 +275,7 @@
               id="toastImage4"
               onmouseenter="showImageOverlay4();"
               onmouseout="hideImageOverlay4();"
-              src="images/toastie4.jpeg"
+              src="images/toastie4.webp"
             />
             <p id="toastP4" class="toastP" onmouseenter="showImageOverlay4();">
               Pepper jack cheese, grilled chicken, diced red onions & finished
@@ -278,7 +287,7 @@
               id="toastImage5"
               onmouseenter="showImageOverlay5();"
               onmouseout="hideImageOverlay5();"
-              src="images/toastie5.jpg"
+              src="images/toastie5.webp"
             />
             <p id="toastP5" class="toastP" onmouseenter="showImageOverlay5();">
               Provolone cheese, all beef meatballs, marinara sauce & finished
@@ -290,7 +299,7 @@
               id="toastImage6"
               onmouseenter="showImageOverlay6();"
               onmouseout="hideImageOverlay6();"
-              src="images/toastie6.jpeg"
+              src="images/toastie6.webp"
             />
             <p id="toastP6" class="toastP" onmouseenter="showImageOverlay6();">
               Swiss cheese, smoked ham & grilled chicken finished with dijon
@@ -338,6 +347,7 @@
             </table>
           </div>
         </div>
+        <!--customized google map link is here-->
         <iframe
           src="https://www.google.com/maps/d/embed?mid=1V648_YpSjQVmNjP8FIoeVqMFh5iLVBi6&ehbc=2E312F"
           loading="lazy"
@@ -408,12 +418,14 @@
     <div class="footerContainer">
       <footer>
         <div class="content">
-          <a><img alt="cheeseLogo" src="images/cheese.png" width="5%" /></a>
+          <a><img alt="cheeseLogo" src="images/cheese.webp" width="5%" /></a>
           <p>©2022 The Melt Shack.</p>
         </div>
       </footer>
     </div>
     <!--footer end-->
+    <!--JS IS HERE-->
     <script src="scripts/script.js"></script>
+    <!--JS IS HERE-->
   </body>
 </html>
